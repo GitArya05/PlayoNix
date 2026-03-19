@@ -1,90 +1,79 @@
-# Playonix — Real-Time Sports Matching
+# 🏀⚽🎾 Playonix  
 
-Find nearby players instantly. Play now.
+> **No more cancelled games. Just play.**
 
-## Quick Start
-
-```bash
-npm install
-npm run dev
-# → http://localhost:5173
-```
-
-Hit **"Continue with Demo"** on the login screen for instant access with sample data.
+A real-time sports matching platform that eliminates the *“flaky player”* problem by connecting nearby players, simplifying coordination, and ensuring reliability through a trust-based system.
 
 ---
 
-## File Structure
+## 🚀 Problem  
 
-```
-playonix/
-├── src/
-│   ├── App.jsx                              Root screen router
-│   ├── main.jsx                             React entry point
-│   ├── styles/globals.css                   All CSS variables, utilities, responsive rules
-│   ├── data/
-│   │   ├── sports.js                        Sport list + level meta
-│   │   └── sampleData.js                    Seed users and matches
-│   ├── utils/
-│   │   ├── storage.js                       localStorage wrapper
-│   │   ├── matchUtils.js                    Time formatting, slot helpers
-│   │   └── scoreUtils.js                    Reliability score math
-│   ├── context/AppContext.jsx               Global state + auth + persistence
-│   ├── components/
-│   │   ├── auth/AuthScreen.jsx              Login / Register
-│   │   ├── profile/
-│   │   │   ├── ProfileSetup.jsx             2-step onboarding (sport + level)
-│   │   │   └── ProfileScreen.jsx            Profile tab
-│   │   ├── matches/
-│   │   │   ├── CreateMatch.jsx              Create match modal
-│   │   │   ├── MatchDetail.jsx              Match detail + actions modal
-│   │   │   └── Tabs.jsx                     NearbyMatches, MyMatches, Notifications
-│   │   └── shared/
-│   │       ├── Icon.jsx                     Inline SVG icon component
-│   │       ├── ReliabilityBadge.jsx         SVG ring score badge
-│   │       ├── MatchCard.jsx                Reusable match list card
-│   │       └── PlayerSlots.jsx              Slot grid visualization
-│   └── screens/HomeScreen.jsx              App shell — side nav + bottom nav + tabs
-├── index.html
-├── package.json
-└── vite.config.js
-```
+- Finding players is difficult  
+- Coordination is scattered across multiple apps  
+- Last-minute cancellations ruin matches  
 
 ---
 
-## Features
+## ✅ Solution  
 
-| Feature | Status |
-|---|---|
-| Register / Login / Demo | ✅ |
-| Profile setup — sports with per-sport level | ✅ |
-| Custom sport — add your own | ✅ |
-| Overall athlete level | ✅ |
-| Create Match | ✅ |
-| Discover nearby matches + map placeholder | ✅ |
-| Join match | ✅ |
-| Confirm participation | ✅ |
-| Check-in at match time | ✅ |
-| Reliability Score (+2 check-in / −10 no-show) | ✅ |
-| Notifications | ✅ |
-| Responsive — phone + laptop | ✅ |
-| Play Now (instant match) | 🔜 |
+**Playonix brings everything into one place:**
+
+- ⚡ Instant player matching  
+- 🤝 Reliability-based accountability  
+- 🔔 Real-time updates & notifications  
 
 ---
 
-## Reliability Score
+## ✨ Features  
 
-| Event | Change |
-|---|---|
-| Check in at match | +2 |
-| No-show recorded | −10 |
-| Range | 0 – 100 |
+### 👤 User Management  
+- Secure authentication (Firebase Auth)  
+- Sports profile with skill levels *(Beginner / Intermediate / Pro)*  
+- Dynamic **Reliability Score** based on attendance  
 
-**85+** Reliable · **65–84** Average · **0–64** Risky
+### 🏟️ Match Coordination  
+- Create matches (sport, time, location, players)  
+- Discover nearby games using maps  
+- Real-time slot updates  
+
+### 🛡️ Trust & Reliability (Core USP)  
+- Match confirmation system  
+- Geofenced check-in *(must be physically present)*  
+- No-show penalty system  
 
 ---
 
-## Responsive Layout
+## 🛠️ Tech Stack  
 
-- **Mobile < 768px** — full screen with bottom tab bar
-- **Desktop ≥ 768px** — sidebar navigation + content column, max-width 960px
+- **Frontend:** React Native 
+- **Backend:** Firebase (Auth, Firestore, Cloud Functions)  
+- **Maps:** Google Maps API  
+- **Notifications:** Firebase Cloud Messaging  
+
+---
+
+## 💡 Future Scope  
+
+- AI-based smart matchmaking  
+- In-app chat  
+- Tournament mode  
+- Payment integration  
+
+---
+
+## 🎯 Vision  
+
+To make local sports **accessible, reliable, and hassle-free** — so no game ever gets cancelled again.
+
+---
+
+## 🤝 Contributing  
+
+Contributions are welcome!  
+Feel free to fork this repo and submit a pull request 🚀  
+
+---
+
+## ⭐ Support  
+
+If you like this project, give it a ⭐ on GitHub!
